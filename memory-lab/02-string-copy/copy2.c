@@ -22,11 +22,11 @@ int main(void)
     // Hint: loop from i = 0 to i <= strlen(s)
     for (int i = 0; i <= strlen(s); i++)
     {
-        t[i] = /* ??? */;
+        t[i] = s[i];
     }
 
     // TODO: Capitalize the first letter of t only
-    t[0] = toupper(/* ??? */);
+    t[0] = toupper(t[0]);
 
     // Print both — now only t should be capitalized
     printf("s: %s\n", s);
