@@ -15,6 +15,8 @@ int main(void)
     // TODO: Check if fopen returned NULL and return 1 if so
     if (file == NULL)
     {
+
+        //test
         return 1;
     }
 
