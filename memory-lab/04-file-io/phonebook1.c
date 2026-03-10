@@ -10,10 +10,10 @@
 int main(void)
 {
     // TODO: Open "phonebook.csv" in append mode "a"
-    FILE *file = fopen(/* ??? */, /* ??? */);
+    FILE *file = fopen("phonebook.csv", "a");
 
     // TODO: Check if fopen returned NULL and return 1 if so
-    if (/* ??? */)
+    if (file == NULL)
     {
         return 1;
     }
