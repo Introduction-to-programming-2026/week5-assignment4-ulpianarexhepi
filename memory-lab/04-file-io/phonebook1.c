@@ -23,10 +23,10 @@ int main(void)
     char *number = get_string("Number: ");
 
     // TODO: Write name and number to the file as "name,number\n"
-    fprintf(file, /* ??? */, name, number);
+    fprintf(file, "%s,%s\n", name, number);
 
     // TODO: Close the file
-    /* ??? */
+    fclose(file);
 
     return 0;
 }
