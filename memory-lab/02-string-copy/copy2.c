@@ -16,7 +16,7 @@ int main(void)
     char *s = get_string("s: ");
 
     // TODO: Allocate memory for t — same length as s, plus 1 for the '\0'
-    char *t = malloc(/* ??? */);
+    char *t = malloc(strlen(s)+1);
 
     // TODO: Copy each character from s into t, including the '\0'
     // Hint: loop from i = 0 to i <= strlen(s)
