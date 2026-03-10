@@ -3,6 +3,6 @@
 
 int main (void){
 
-    char *s ="HI!";
+    string s ="HI!";
     printf("%s\n", s);
 }
