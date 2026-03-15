@@ -37,14 +37,14 @@ int main(int argc, char *argv[])
 
     // TODO: Loop — read one BYTE from src, write it to dst, until src is empty
     // Hint: fread returns the number of items read; stop when it returns 0
-    while (fread(/* ??? */, sizeof(b), 1, src) != 0)
+    while (fread(&b, sizeof(b), 1, src) != 0)
     {
-        fwrite(/* ??? */, sizeof(b), 1, dst);
+        fwrite(&b, sizeof(b), 1, dst);
     }
 
     // TODO: Close both files
-    /* ??? */
-    /* ??? */
+   fclose(src);
+   fclose(dst);
 
     return 0;
 }
