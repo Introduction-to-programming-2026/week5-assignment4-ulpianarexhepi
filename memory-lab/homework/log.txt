@@ -1,5 +1,5 @@
-Ana
-Ulpiana
-Rexhepi
-Student
-Ce
+Introduction to programming
+Infromation technology
+Physics
+Math
+Chemistry
