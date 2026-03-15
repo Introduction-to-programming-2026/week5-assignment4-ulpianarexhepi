@@ -16,7 +16,7 @@ int main(void)
     printf("x is %i, y is %i\n", x, y);
 
     // TODO: Pass the addresses of x and y using &
-    swap(/* ??? */, /* ??? */);
+    swap(x, y);
 
     printf("x is %i, y is %i\n", x, y);
 }
@@ -25,7 +25,7 @@ int main(void)
 void swap(int a, int b)
 {
     // TODO: Use *a and *b to swap the actual values in memory
-    int tmp = /* ??? */;
-    /* ??? */ = /* ??? */;
-    /* ??? */ = tmp;
+    int tmp = *x;
+    *x = *y;
+    *y = tmp;
 }
