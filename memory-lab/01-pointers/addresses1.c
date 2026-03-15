@@ -7,7 +7,8 @@
 int main(void)
 {
     int n = 50;
+    int *p= &n;
 
     // TODO: Print the address of n using %p and the & operator
-    printf("%p\n", /* ??? */);
+    printf("%p\n", p);
 }
