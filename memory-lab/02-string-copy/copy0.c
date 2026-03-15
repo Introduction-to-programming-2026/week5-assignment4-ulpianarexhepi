@@ -4,7 +4,7 @@
 // Notice that BOTH s and t get capitalized, even though we only changed t.
 //
 // TODO: Write a comment below explaining WHY this happens:
-// ANSWER: ...
+// ANSWER: it doesnt copy the actual text
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>

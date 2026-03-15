@@ -3,6 +3,7 @@
 // This shows how files are just sequences of bytes in memory.
 // We read one byte at a time from the source and write it to the destination.
 // Usage: ./cp source destination
+
 #include <stdio.h>
 
 typedef unsigned char BYTE;
@@ -33,7 +34,6 @@ int main(int argc, char *argv[])
     }
 
     BYTE b;
-
     // TODO: Loop — read one BYTE from src, write it to dst, until src is empty
     // Hint: fread returns the number of items read; stop when it returns 0
     while (fread(&b, sizeof(b), 1, src) != 0)

@@ -1,4 +1,4 @@
-// Capitalizes a copy of a string — the SAFE way
+// Capitalizes a copy of a string — the SAFE way.
 //
 // This is the production-quality version:
 //   - Check if get_string returned NULL
@@ -6,6 +6,7 @@
 //   - Use strcpy instead of a manual loop
 //   - Check length before capitalizing
 //   - Free allocated memory when done
+
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -47,6 +48,5 @@ int main(void)
 
     // TODO: Free the memory you allocated
     free(t);
-
     return 0;
 }

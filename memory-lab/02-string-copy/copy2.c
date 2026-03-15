@@ -1,8 +1,9 @@
-// Capitalizes a copy of a string — the RIGHT way
+// Capitalizes a copy of a string — the RIGHT way.
 //
 // To make a true copy we must:
 //   1. Allocate new memory with malloc
 //   2. Copy the characters one by one into that new memory
+
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -19,6 +20,7 @@ int main(void)
 
     // TODO: Copy each character from s into t, including the '\0'
     // Hint: loop from i = 0 to i <= strlen(s)
+
     for (int i = 0; i <= strlen(s); i++)
     {
         t[i] = s[i];
