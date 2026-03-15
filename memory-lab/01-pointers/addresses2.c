@@ -12,5 +12,5 @@ int main(void)
     int *p = &n;
 
     // TODO: Print the address stored in p using %p
-    printf("%p\n", *p);
+    printf("%i\n", *p);
 }
