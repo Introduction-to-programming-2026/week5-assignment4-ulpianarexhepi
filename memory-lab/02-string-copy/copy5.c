@@ -34,7 +34,7 @@ int main(void)
     }
 
     // TODO: Copy s into t using strcpy
-    strcpy(s, t);
+    strcpy(t, s);
 
     // TODO: Capitalize t[0] only if the string is not empty
     if (strlen(t) > 0)
