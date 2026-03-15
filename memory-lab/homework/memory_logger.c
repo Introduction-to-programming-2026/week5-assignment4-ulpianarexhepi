@@ -49,7 +49,7 @@ int main(void)
     // -------------------------------------------------------
 
     // TODO: Open "log.txt" in write mode "w"
-    FILE *file = fopen(log.txt, "w");
+    FILE *file = fopen("log.txt", "w");
 
     // TODO: Check if fopen returned NULL
     if (file==NULL)
