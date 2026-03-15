@@ -1,6 +1,6 @@
 // Homework – Memory Logger
-// Name: _______________
-// Date: _______________
+// Name: Ulpiana R
+// Date: 15.03.26
 //
 // Read the README.md in this folder before starting!
 
