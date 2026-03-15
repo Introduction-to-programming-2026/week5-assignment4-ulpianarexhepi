@@ -7,7 +7,6 @@
 //
 // Hint: When you call swap(x, y), does the function receive x and y
 //       themselves, or copies of their values?
-
 #include <stdio.h>
 
 void swap(int *a, int *b);

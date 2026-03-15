@@ -3,7 +3,6 @@
 // This shows how files are just sequences of bytes in memory.
 // We read one byte at a time from the source and write it to the destination.
 // Usage: ./cp source destination
-
 #include <stdio.h>
 
 typedef unsigned char BYTE;

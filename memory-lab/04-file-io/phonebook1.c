@@ -2,7 +2,6 @@
 //
 // This is the safe version — always check that fopen succeeded
 // before writing to the file.
-
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>

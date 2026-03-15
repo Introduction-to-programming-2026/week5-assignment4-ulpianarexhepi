@@ -6,7 +6,6 @@
 //   - Use strcpy instead of a manual loop
 //   - Check length before capitalizing
 //   - Free allocated memory when done
-
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>

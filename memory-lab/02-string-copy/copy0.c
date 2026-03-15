@@ -5,7 +5,6 @@
 //
 // TODO: Write a comment below explaining WHY this happens:
 // ANSWER: ...
-
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>

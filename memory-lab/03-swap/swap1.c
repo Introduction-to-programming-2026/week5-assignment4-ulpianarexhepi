@@ -2,7 +2,6 @@
 //
 // Instead of passing values, we pass the ADDRESSES of x and y.
 // The function can then follow those addresses and modify the real variables.
-
 #include <stdio.h>
 
 // TODO: Update the signature — parameters should be int* (pointers to int)
