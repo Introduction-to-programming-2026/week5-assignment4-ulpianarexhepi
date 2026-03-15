@@ -15,7 +15,7 @@
 int main(void)
 {
     // TODO: Declare an array of NUM_WORDS char* pointers
-    /* ??? */
+    char *words[NUM_WORDS];
 
     // -------------------------------------------------------
     // STEP 1 & 2: Read words and store copies in memory
@@ -25,22 +25,22 @@ int main(void)
         char *input = get_string("Enter word %i: ", i + 1);
 
         // TODO: Allocate memory for a copy of input (+1 for '\0')
-        words[i] = malloc(/* ??? */);
+        words[i] = malloc(strlen(input)+1);
 
         // TODO: Check if malloc returned NULL
-        if (/* ??? */)
+        if (words[i]==NULL)
         {
             printf("Memory error!\n");
             return 1;
         }
 
         // TODO: Copy input into words[i]
-        strcpy(/* ??? */, /* ??? */);
+        strcpy(words[i], input);
 
         // TODO: Capitalize the first letter of words[i]
         if (strlen(words[i]) > 0)
         {
-            words[i][0] = toupper(/* ??? */);
+            words[i][0] = toupper(words[i][0]);
         }
     }
 
@@ -49,10 +49,10 @@ int main(void)
     // -------------------------------------------------------
 
     // TODO: Open "log.txt" in write mode "w"
-    FILE *file = fopen(/* ??? */, /* ??? */);
+    FILE *file = fopen(log.txt, "w");
 
     // TODO: Check if fopen returned NULL
-    if (/* ??? */)
+    if (file==NULL)
     {
         printf("Could not open file!\n");
         return 1;
@@ -61,11 +61,11 @@ int main(void)
     // TODO: Write each word to the file followed by "\n"
     for (int i = 0; i < NUM_WORDS; i++)
     {
-        fprintf(file, /* ??? */, words[i]);
+        fprintf(file, "%s\n", words[i]);
     }
 
     // TODO: Close the file
-    /* ??? */
+    fclose(file);
 
     printf("\nWords saved to log.txt!\n");
 
@@ -76,7 +76,7 @@ int main(void)
     // TODO: Free each word
     for (int i = 0; i < NUM_WORDS; i++)
     {
-        free(/* ??? */);
+        free(words[i]);
     }
 
     return 0;
