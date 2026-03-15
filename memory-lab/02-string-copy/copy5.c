@@ -19,7 +19,7 @@ int main(void)
     char *s = get_string("s: ");
 
     // TODO: Check if s is NULL and return 1 if so
-    if ( s=NULL)
+    if ( s==NULL)
     {
         return 1;
     }
@@ -28,18 +28,18 @@ int main(void)
     char *t = malloc(strlen(s) + 1);
 
     // TODO: Check if t is NULL and return 1 if so
-    if (t=NULL)
+    if (t==NULL)
     {
         return 1;
     }
 
     // TODO: Copy s into t using strcpy
-    strcpy(/* ??? */, /* ??? */);
+    strcpy(s, t);
 
     // TODO: Capitalize t[0] only if the string is not empty
     if (strlen(t) > 0)
     {
-        t[0] = toupper(/* ??? */);
+        t[0] = toupper(t[0]);
     }
 
     // Print both strings
@@ -47,7 +47,7 @@ int main(void)
     printf("t: %s\n", t);
 
     // TODO: Free the memory you allocated
-    /* ??? */
+    free(t);
 
     return 0;
 }
