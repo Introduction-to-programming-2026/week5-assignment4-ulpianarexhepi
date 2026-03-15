@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     }
 
     // TODO: Open argv[1] for reading in binary mode "rb"
-    FILE *src = fopen(/* ??? */, /* ??? */);
+    FILE *src = fopen(argv[1], "rb");
     if (src == NULL)
     {
         printf("Could not open source file.\n");
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
     }
 
     // TODO: Open argv[2] for writing in binary mode "wb"
-    FILE *dst = fopen(/* ??? */, /* ??? */);
+    FILE *dst = fopen(argv[2], "wb");
     if (dst == NULL)
     {
         printf("Could not open destination file.\n");
